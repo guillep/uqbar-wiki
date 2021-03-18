@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+
+
+  <title>Instalacion de Entorno Angular</title>
+  <meta property="og:title" content="Instalacion de Entorno Angular" />
+
+
+
+
+
+
+<link rel="canonical" href="wiki.uqbar.org/wiki/articles/angular-instalacion.html" />
+<meta property="og:url" content="wiki.uqbar.org/wiki/articles/angular-instalacion.html" />
+<meta property="og:site_name" content="uqbar-wiki" />
+<meta name="application-name" content="uqbar-wiki"/>
+
+<meta property="og:updated_time" content=" 2021-03-17T21:26:17-03:00" />
+
+
+
+
+
+
+  <meta property="keywords" content="web,angular,ui,configuracion,entorno,spa," />
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" >
+    <link type="text/plain" rel="author" href="/humans.txt"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">    
+
+    <link rel="stylesheet" href="/assets/app-1e946f931f577cd478e6e6610915be9d.css">
+    <style>
+        .navbar {
+            -webkit-backface-visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="top-bar navbar-background" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <div id="pagetitle"><img alt="Uqbar" src="/img/proyecto-uqbarwiki.png" height="100px"
+                    width="100px" /></div>
+        </li>
+    </ul>
+    <ul class="left">
+        <div class="mobile">
+            <div class="navbar-buttons">
+                <div class="navbar-icon-link">
+                    <a href="/"><img alt="Home" src="/img/wiki/home-2.png" height="25px"
+                            width="25px" title="Home" /></a>
+                </div>
+                <div class="navbar-icon-link">
+                    <a href="/articles"><img alt="Artículos" src="/img/wiki/list.png"
+                            height="25px" width="25px" title="Artículos" /></a>
+                </div>
+            </div>
+        </div>
+    </ul>
+</nav>
+
+<div class="column small-0 medium-2 large-2 sidebar" style="margin-top: 5px;">
+        <!-- Html Elements for Search -->
+<div id="search-container">
+    <input type="text" id="search-input" name="search-input" placeholder="Artículo a buscar...">
+    <ul id="results-container"></ul>
+    <hr>
+</div>
+
+        <div class="not-mobile">
+                <ul class="rows small-12 medium-10 large-10 side-nav stack button-group" title="Links" role="menu">
+                        <li class="button" role="menuitem"><a href="/" class="sidebar-link"><img
+                                                alt="Home" src="/img/wiki/home-2.png" height="35px"
+                                                width="35px" />&nbsp;&nbsp;&nbsp;Home</a></li>
+                        <li class="button" role="menuitem"><a href="/articles" class="sidebar-link"><img
+                                                alt="Artículos" src="/img/wiki/list.png" height="35px"
+                                                width="35px" />&nbsp;&nbsp;&nbsp;Artículos</a></li>
+                </ul>
+
+                <hr>
+
+                <ul class="rows small-12 medium-10 large-10 side-nav stack button-group" role="menu">
+                        <img src="/img/wiki/utn.png" alt="UTN" height="40px" width="40px" title="UTN" />
+                        <li class="button" role="menuitem"><a
+                                        href="/wiki/articles/paradigmas-de-programacion.html">Paradigmas
+                                        de
+                                        programación</a></li>
+                        <li class="button" role="menuitem"><a href="/wiki/articles/design-temario.html">Diseño de
+                                        Sistemas</a>
+                        </li>
+                        <li class="button" role="menuitem"><a
+                                        href="/wiki/articles/tecnicas-avanzadas-de-programacion.html">Técnicas
+                                        avanzadas de programación</a></li>
+                        <br>
+                        <img src="/img/wiki/unsam.png" alt="UNSAM" height="40px" width="40px"
+                                title="UNSAM" />
+                        <li class="button" role="menuitem"><a href="/wiki/articles/algo2-temario.html">Algoritmos
+                                        II</a></li>
+                        <li class="button" role="menuitem"><a href="/wiki/articles/algo3-temario.html">Algoritmos
+                                        III</a></li>
+                        <li class="button" role="menuitem"><a href="/wiki/articles/phm-temario.html">Programación
+                                        con
+                                        Herramientas
+                                        Modernas</a></li>
+                </ul>
+        </div>
+</div>
+
+<div class="column small-12 medium-10 large-10">
+    <div id="article_title">
+    <h1>
+        <i>Instalacion de Entorno Angular</i>
+    </h1>
+</div>
+
+
+    <!-- <div id="mw-indicator-featured-star" class="mw-indicator">
+    <a href="#"
+       title="This is a featured article. Click here for more information."><img
+            alt="This is a featured article"
+            src="/img/featured_star.png" width="20"
+            height="19"
+            data-file-width="462" data-file-height="438">
+    </a>
+</div> -->
+
+
+<div id="article_content">
+    <div id="toc-container">
+  <table class="toc" id="toc">
+    <tbody>
+      <tr>
+        <td>
+          <div id="toctitle">
+            <h2>Contents</h2>
+          </div>
+          <ul>
+            <li class="toc_level-1 toc_section-1">
+              <a href="#tocAnchor-1-1"><span class="tocnumber">1</span> <span class="toctext">Entorno</span></a>
+            </li>
+            <li class="toc_level-1 toc_section-2">
+              <a href="#tocAnchor-1-2"><span class="tocnumber">2</span> <span class="toctext">Editor de Texto</span></a>
+              <ul>
+                <li class="toc_level-2 toc_section-3">
+                  <a href="#tocAnchor-1-2-1"><span class="tocnumber">2.1</span> <span class="toctext">Visual Studio Code</span></a>
+                </li>
+                <li class="toc_level-2 toc_section-4">
+                  <a href="#tocAnchor-1-2-2"><span class="tocnumber">2.2</span> <span class="toctext">Configuraciones</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="toc_level-1 toc_section-5">
+              <a href="#tocAnchor-1-5"><span class="tocnumber">3</span> <span class="toctext">Aprendiendo Typescript</span></a>
+            </li>
+            <li class="toc_level-1 toc_section-6">
+              <a href="#tocAnchor-1-6"><span class="tocnumber">4</span> <span class="toctext">Crear un proyecto Angular desde cero</span></a>
+            </li>
+            <li class="toc_level-1 toc_section-7">
+              <a href="#tocAnchor-1-7"><span class="tocnumber">5</span> <span class="toctext">Correr los tests de un proyecto</span></a>
+            </li>
+            <li class="toc_level-1 toc_section-8">
+              <a href="#tocAnchor-1-8"><span class="tocnumber">6</span> <span class="toctext">Ejemplo de un archivo Travis</span></a>
+            </li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div><p>
+  <img src="/img/languages/angular1.png" alt="angular" />
+</p>
+
+<h1 id="tocAnchor-1-1">Entorno</h1>
+
+<p>Es necesario que instales las siguientes herramientas, en este orden:</p>
+
+<ul>
+  <li>Si estás en entorno Windows te recomendamos instalarte <a href="https://gitforwindows.org/">Git Bash</a></li>
+  <li>Seguimos con <a href="https://nodejs.org/en/">NodeJS</a>, preferentemente la última versión.</li>
+  <li>Luego <a href="https://www.npmjs.com/">NPM (Node Package Manager)</a>, con el que vamos a hacer los builds de nuestras aplicaciones.
+    <ul>
+      <li>Para familiarizarte con el manejo de dependencias, te dejamos <a href="npm-dependencias.html">este artículo</a></li>
+    </ul>
+  </li>
+  <li>El <a href="https://github.com/angular/angular-cli/blob/master/packages/angular/cli/README.md">Angular CLI (Command line interface)</a> se instala con npm:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code>npm install <span class="nt">-g</span> @angular/cli
+</code>
+    </pre>
+  </div>
+</div>
+
+<h1 id="tocAnchor-1-2">Editor de Texto</h1>
+
+<h2 id="tocAnchor-1-2-1">Visual Studio Code</h2>
+
+<ul>
+  <li>El editor de texto que vamos a soportar en la cursada es <a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> (hay <a href="https://sourceforge.net/projects/vscode-portable/">una versión portable</a> si estás en una máquina sin privilegios de administrador).</li>
+</ul>
+
+<p>Otra opción es utilizar <a href="https://www.jetbrains.com/webstorm/">Web Storm</a> (de la suite de IntelliJ), si tienen una cuenta de la facultad pueden solicitar una licencia educativa. Solo que como no vamos a aprovechar todas las herramientas de este IDE poderoso quizás convenga ir por el Visual Studio Code.</p>
+
+<ul>
+  <li>Los plugins del Visual Studio Code que te recomendamos al 2019 son:
+    <ul>
+      <li><strong>TypeScript Hero</strong>: herramientas generales para programar en Typescript</li>
+      <li><strong>Angular 8 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS &amp; Flex Layout</strong>: autocompletado de templates de Angular</li>
+      <li><strong>Angular Files</strong>: permite generar desde el menú de visual studio code componentes, pipes, servicios, etc.</li>
+      <li>como chiche extra: <strong>VSCode simpler Icons with Angular</strong> para tener íconos diferentes (hay que seguir los pasos de instalación de la página del plugin)</li>
+      <li>si estás acostumbrado a los shortcuts de Eclipse, <strong>Eclipse Keymap</strong></li>
+      <li><strong>Git Lens</strong>, para ver el historial de Git integrado con tu Visual Studio Code</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="tocAnchor-1-2-2">Configuraciones</h2>
+
+<p>A continuación te dejamos un video para mostrarte cómo configurar los plugins para que no exijan puntos y coma (<code class="highlighter-rouge">;</code>) al final de cada sentencia, algo que recomendamos.</p>
+
+<p>
+  <img src="../../img/wiki/VSCsemicolonTS.gif" alt="no-semicolon" />
+</p>
+
+<p>Además, en tu proyecto, en el directorio raíz, vas a encontrar un archivo <code class="highlighter-rouge">tslint.json</code>, asegurate que tenga esta configuración:</p>
+
+<div class="language-js highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code><span class="s2">"semicolon"</span><span class="p">:</span> <span class="p">[</span>
+  <span class="kc">false</span><span class="p">,</span>
+  <span class="s2">"never"</span>
+<span class="p">],</span>
+</code>
+    </pre>
+  </div>
+</div>
+
+<h1 id="tocAnchor-1-5">Aprendiendo Typescript</h1>
+
+<p>Typescript es el lenguaje de programación base para Angular. Tranquilo, es muy similar a los lenguajes orientados a objetos en los que ya trabajaste. Para iniciarte o para hacer consultas te dejamos estos links:</p>
+
+<ul>
+  <li><a href="https://www.typescriptlang.org/docs/home.html">Documentación oficial de Typescript</a>: tiene una intro de 5 minutos, otros tutoriales cortos y el Handbook para sacarse dudas</li>
+  <li><a href="https://tutorialzine.com/2016/07/learn-typescript-in-30-minutes">Aprendiendo Typescript en 30 minutos</a>: muy buen tutorial para comenzar explicando los conceptos más salientes</li>
+  <li><a href="https://www.gitbook.com/download/pdf/book/khru/typescript">Tutorial de Typescript en castellano y PDF</a>: material de consulta en castellano para los interesados</li>
+  <li>El <a href="https://rmolinamir.github.io/typescript-cheatsheet/">cheatsheet</a> o guía rápida para tener a mano mientras programan</li>
+  <li>Y como typescript es un superconjunto de javascript, siempre conviene tener a mano las <a href="http://es6-features.org">funcionalidades de ES6</a></li>
+  <li><strong>Tips</strong>
+    <ul>
+      <li><a href="https://mariusschulz.com/blog/typing-destructured-object-parameters-in-typescript">Typing destructured objects parameters</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="tocAnchor-1-6">Crear un proyecto Angular desde cero</h1>
+
+<p>En la consola Git Bash o bien desde una terminal de Linux hacemos</p>
+
+<div class="language-bash highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code>ng new nombre-de-tu-app
+<span class="nb">cd </span>nombre-de-tu-app
+ng serve <span class="nt">-open</span>  <span class="c"># o bien, la versión corta es ng s -o</span>
+</code>
+    </pre>
+  </div>
+</div>
+
+<h1 id="tocAnchor-1-7">Correr los tests de un proyecto</h1>
+
+<p>Para ejecutar los tests de un proyecto, te posicionás en el directorio raíz y ejecutás desde la consola</p>
+
+<div class="language-bash highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code>ng <span class="nb">test</span> <span class="nt">--watch</span> <span class="nt">--sourceMap</span><span class="o">=</span><span class="nb">false</span>
+</code>
+    </pre>
+  </div>
+</div>
+
+<h1 id="tocAnchor-1-8">Ejemplo de un archivo Travis</h1>
+
+<p>El siguiente es un ejemplo posible de un archivo <code class="highlighter-rouge">.travis.yml</code> para una aplicación Angular 8 (válido a octubre 2019):</p>
+
+<div class="language-yml highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code><span class="na">sudo</span><span class="pi">:</span> <span class="s">required</span>
+<span class="na">dist</span><span class="pi">:</span> <span class="s">trusty</span>
+<span class="na">language</span><span class="pi">:</span> <span class="s">node_js</span>
+<span class="na">node_js</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s1">'</span><span class="s">10.12'</span>
+
+<span class="na">addons</span><span class="pi">:</span>
+<span class="na">apt</span><span class="pi">:</span>
+  <span class="na">sources</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">google-chrome</span>
+  <span class="na">packages</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">google-chrome-stable</span>
+    <span class="pi">-</span> <span class="s">google-chrome-beta</span>
+
+<span class="na">before_install</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">npm install -g npm@latest</span>
+  <span class="pi">-</span> <span class="s">export CHROME_BIN=chromium-browser</span>
+  <span class="pi">-</span> <span class="s">export DISPLAY=:99.0</span>
+  <span class="pi">-</span> <span class="s">sh -e /etc/init.d/xvfb start</span>
+
+<span class="na">before_script</span><span class="pi">:</span>
+
+<span class="na">script</span><span class="pi">:</span> <span class="s">ng test --sourceMap=false --watch=false</span>
+</code>
+    </pre>
+  </div>
+</div>
+
+<p>Lo importante es que la versión de node que uses sea superior a 10.1</p>
+
+</div>
+
+
+    <div id="catlinks" class="catlinks" data-mw="interface">
+    <div id="normal-catlinks" class="normal-catlinks"><a href="/wiki/internal/categories.html" title="Help:Category">Categories</a>:
+        <ul>
+            
+             <li><a href="/categories/web" title="web">Web</a></li>
+            
+             <li><a href="/categories/angular" title="angular">Angular</a></li>
+            
+             <li><a href="/categories/ui" title="ui">Ui</a></li>
+            
+             <li><a href="/categories/configuracion" title="configuracion">Configuracion</a></li>
+            
+             <li><a href="/categories/entorno" title="entorno">Entorno</a></li>
+            
+             <li><a href="/categories/spa" title="spa">Spa</a></li>
+            
+        </ul>
+    </div>
+    <div id="hidden-catlinks" class="hidden-catlinks mw-hidden-cats-hidden">Hidden categories:
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+<div id="article_metadata">
+    <!-- <p><i>Latest update on September 26, 2019 by
+        Fernando Dodino</i></p>
+
+    <ul class="accordion" data-accordion>
+        <li class="accordion-navigation">
+            <a href="#panel1a">Page History, Meta information</a>
+
+            <div id="panel1a" class="content">
+
+                <div class="rows">
+                    <div class="column small-12 medium-6 large-6">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Page Commits</th>
+                                <th>Page Additions</th>
+                                <th>Page Deletions</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>48</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="column small-12 medium-6 large-6">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Commits</th>
+                            <tr>
+                            </thead>
+
+                            <tbody>
+                            
+                            <tr>
+                                <td>Fernando Dodino</td>
+                                <td>fernand...</td>
+                                <td>10</td>
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <table style="margin-left: 15px;">
+                    <thead>
+                    <tr>
+                        <th>Hash</th>
+                        <th>Time</th>
+                        <th>Name</th>
+                        <th>Mail</th>
+                        <th>Subject</th>
+                    <tr>
+                    </thead>
+
+                    <tbody>
+                    
+                    <tr>
+                        <td>b3cafc87</td>
+                        <td>Thu Sep 26 17:46:23 2019 -0300</td>
+                        <td>Fernando Dodino</td>
+                        <td>fernand...</td>
+                        <td>closures enhancements | ts articles added</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>1cb03751</td>
+                        <td>Thu Sep 26 16:47:09 2019 -0300</td>
+                        <td>Fernando Dodino</td>
+                        <td>fernand...</td>
+                        <td>Adding tslint.json configuration and travis.yml</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>0246fab7</td>
+                        <td>Thu Sep 19 18:57:07 2019 -0300</td>
+                        <td>Fernando Dodino</td>
+                        <td>fernand...</td>
+                        <td>Adding GitLens plugin recommendation</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>bc537f7b</td>
+                        <td>Thu Sep 19 17:59:35 2019 -0300</td>
+                        <td>Fernando Dodino</td>
+                        <td>fernand...</td>
+                        <td>Adding typescript cheatsheet</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>ca0c53ba</td>
+                        <td>Thu Sep 19 17:51:01 2019 -0300</td>
+                        <td>Fernando Dodino</td>
+                        <td>fernand...</td>
+                        <td>Adding npm page to angular installation</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+
+            </div>
+        </li>
+    </ul> -->
+
+</div>
+
+
+</div>
+
+
+<div id="footer">
+    <div class="columns small-12 medium-12 large-12">
+        © 2021 - Uqbar Foundation
+    </div>
+</div>
+
+<script>
+    'use strict';
+</script>
+
+<script src="/assets/jquery-aa71a7b50270602be524223735204e4e.js"></script>
+<script src="/assets/jquery.min-92bca385e77eff06fdfc99d71ff5d9cb.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+
+<script src="/assets/foundation/foundation-9cdbe0bbce183118de08f9938e53d976.js"></script>
+<script src="/assets/foundation/foundation.abide-89a2bdc8d7b0219f70b26edf2ae6887e.js"></script>
+<script src="/assets/foundation/foundation.accordion-fb975cac4e1d51205357ccef64ad87f4.js"></script>
+<script src="/assets/foundation/foundation.alert-09f0ede105a8181ae99c1e952f89ca3b.js"></script>
+<script src="/assets/foundation/foundation.clearing-1720b58085d63e88f45a453bb9ad3e3b.js"></script>
+<script src="/assets/foundation/foundation.dropdown-644acf98749f084fdf912c4b00957f31.js"></script>
+<script src="/assets/foundation/foundation.equalizer-97288e933d9acc43fab592768c628ba6.js"></script>
+<script src="/assets/foundation/foundation.interchange-083c4df6919a083e985b5e687d5c30b9.js"></script>
+<script src="/assets/foundation/foundation.joyride-c8c49db46553294043e6ec5c19e1285b.js"></script>
+<script src="/assets/foundation/foundation.magellan-2fb6e4d1e4284a920b3a7d892e2cb54c.js"></script>
+<script src="/assets/foundation/foundation.offcanvas-63af9a0eca0822c6f6a77ba0eb3dd7ec.js"></script>
+<script src="/assets/foundation/foundation.orbit-79b5540e0f58a265fd959aaf18fc2345.js"></script>
+<script src="/assets/foundation/foundation.reveal-620cbbd491fb6eaf8dc057949a254e29.js"></script>
+<script src="/assets/foundation/foundation.slider-e5da59a7bd13309d315a6a95e0654b35.js"></script>
+<script src="/assets/foundation/foundation.tab-9ea3a242acf982f76f891ac5e32aa92a.js"></script>
+<script src="/assets/foundation/foundation.tooltip-926551742e978e4456aa7ca8c6ffe334.js"></script>
+<script src="/assets/foundation/foundation.topbar-fa936a3a88514cb2c51c4ccf3fefaeb0.js"></script>
+
+<script src="/assets/jquery.cookie-600df63e64417ec0c172cd3580ffe4f3.js"></script>
+<!-- Script pointing to jekyll-search.js -->
+<script src="/assets/jekyll-search-db248d3bf113e122870c09fd6d9b0592.js"></script>
+
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: "/search.json"
+    });
+
+    $(document).foundation();
+
+</script>
+
+<!-- prism.js -->
+<script src="/assets/prism-193ebecb65a347c425ecdb3c4592fd0e.js"></script>
+</body>
+</html>
